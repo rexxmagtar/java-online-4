@@ -18,4 +18,9 @@ public class Text {
     public String toString() {
         return headline+"\n"+ text;
     }
+
+    public  void add_sentence(sentence sent){
+
+        text+=sent.toString();
+    }
 }

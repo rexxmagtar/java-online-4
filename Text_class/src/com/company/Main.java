@@ -17,6 +17,8 @@ public class Main {
 
         Text tex1=new Text("MY HEADLINE",new sentence[]{sentence1,sentence2});
 
+        tex1.add_sentence(sentence1);
+
         System.out.println(tex1);
 
 
