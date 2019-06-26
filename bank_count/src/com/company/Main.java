@@ -7,8 +7,11 @@ public class Main {
 
         BankCounts counts1=new BankCounts("Alex_count");
 
+
         counts1.addCount(1000);
         counts1.addCount(-1000);
+
+        counts1.sort();
         counts1.changeBalance(200,1);
 
         System.out.println("Allbalance:"+counts1.getAllBalance()+" positive:"+counts1.getPositiveCountsBalance()+

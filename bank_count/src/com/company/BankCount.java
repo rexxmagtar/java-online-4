@@ -1,8 +1,23 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+
 
 class BankCounts {
+Comparator<BankCount> countComparator=new Comparator<BankCount>() {
+    @Override
+    public int compare(BankCount o1, BankCount o2) {
+        if(o1.getCount()>o2.getCount())
+            return 1;
+        if(o1.getCount()<o2.getCount())
+            return -1;
+
+            return 0;
+    }
+};
+
+
 
     private String name;
     private ArrayList<BankCount> counts;
@@ -59,6 +74,8 @@ class BankCounts {
      }
 
 
+
+
     public int getNegativeCountsBalance(){
 
         int sum=0;
@@ -70,6 +87,12 @@ class BankCounts {
 
         return sum;
 
+
+    }
+
+    public void sort(){
+
+        counts.sort(countComparator);
     }
 
 
