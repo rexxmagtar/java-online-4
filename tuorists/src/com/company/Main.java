@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        System.out.println("Start");
         programm programm1=new programm(14, programm.type.shopping, programm.transport.ground,
                 programm.meals.two_times);
         programm programm2=new programm(5, programm.type.sport, programm.transport.air,
